@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     img_dct_rgb = {}
     img_dct_gray = {}
-    for ii,pset_id in enumerate(df._pset_id.values):
+    for pset_id in df._pset_id.values:
         with open(pj(basedir, pset_id, 'log')) as fd:
             txt = fd.read()
         go = True
